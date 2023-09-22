@@ -19,7 +19,7 @@ func DeleteLocalFood(w http.ResponseWriter, r *http.Request) {
 
 			w.Header().Add("Content-Type", "application/json")
 			w.WriteHeader(http.StatusOK)
-			json.NewEncoder(w).Encode("Deleted")
+			json.NewEncoder(w).Encode("Successfully Deleted Singe Local Food")
 			break
 		}
 	}
