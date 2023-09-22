@@ -13,11 +13,9 @@ import (
 )
 
 func UpdateLocalFood(w http.ResponseWriter, r *http.Request) {
-	// Read dynamic id parameter
 	vars := mux.Vars(r)
 	id, _ := strconv.Atoi(vars["id"])
 
-	// Read request body
 	defer r.Body.Close()
 	body, err := io.ReadAll(r.Body)
 
